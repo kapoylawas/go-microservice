@@ -1,6 +1,7 @@
 package error
 
 func ErrMapping(err error) bool {
+
 	allErrors := make([]error, 0)
 	allErrors = append(append(GeneralErrors[:], UserErrors[:]...))
 
